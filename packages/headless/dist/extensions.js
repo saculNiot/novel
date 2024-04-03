@@ -1,0 +1,2 @@
+'use client'
+import{a,b,c,d,e,f,g,m as h,n as i,o as j,p as k,q as l,r as m,s as n,t as o,u as p,v as q,w as r,x as s,y as t,z as u}from"./chunk-MQLQDYGD.js";export{e as AIHighlight,h as Command,u as HorizontalRule,b as ImageResizer,r as InputRule,s as Placeholder,m as StarterKit,p as TaskItem,q as TaskList,o as TiptapImage,n as TiptapLink,a as UpdatedImage,g as addAIHighlight,j as createSuggestionItems,l as getPrevText,k as handleCommandNavigation,c as inputRegex,d as pasteRegex,f as removeAIHighlight,i as renderItems,t as simpleExtensions};

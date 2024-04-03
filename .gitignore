@@ -43,10 +43,6 @@ next-env.d.ts
 # intellij
 .idea
 
-dist/**
-/dist
-packages/*/dist
-
 .turbo
 /test-results/
 /playwright-report/
