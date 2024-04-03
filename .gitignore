@@ -43,7 +43,11 @@ next-env.d.ts
 # intellij
 .idea
 
-.turbo
+# dist/**
+# /dist
+# packages/*/dist
+
+# .turbo
 /test-results/
 /playwright-report/
 /playwright/.cache/
