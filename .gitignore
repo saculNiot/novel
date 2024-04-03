@@ -13,7 +13,7 @@ apps/*/node_modules
 /out/
 
 # production
-/build
+# /build
 
 # misc
 .DS_Store
@@ -47,7 +47,7 @@ next-env.d.ts
 # /dist
 # packages/*/dist
 
-# .turbo
+.turbo
 /test-results/
 /playwright-report/
 /playwright/.cache/
