@@ -1,5 +1,5 @@
 
-> novel@0.3.1 build /Users/gohshengyang/Github/novel/packages/headless
+> novel@0.3.3 build /Users/gohshengyang/Github/novel/packages/headless
 > tsup
 
 [34mCLI[39m Building entry: {"index":"src/components/index.ts","extensions":"src/extensions/index.ts","plugins":"src/plugins/index.ts"}
@@ -10,20 +10,20 @@
 [34mCLI[39m Cleaning output folder
 [34mCJS[39m Build start
 [34mESM[39m Build start
-[32mCJS[39m [1mdist/plugins.cjs    [22m[32m2.16 KB[39m
-[32mCJS[39m [1mdist/index.cjs      [22m[32m5.34 KB[39m
-[32mCJS[39m [1mdist/extensions.cjs [22m[32m7.51 KB[39m
-[32mCJS[39m ⚡️ Build success in 24ms
-[32mESM[39m [1mdist/index.js          [22m[32m2.35 KB[39m
-[32mESM[39m [1mdist/extensions.js     [22m[32m549.00 B[39m
 [32mESM[39m [1mdist/chunk-MQLQDYGD.js [22m[32m6.19 KB[39m
-[32mESM[39m [1mdist/plugins.js        [22m[32m1.66 KB[39m
-[32mESM[39m ⚡️ Build success in 25ms
+[32mESM[39m [1mdist/extensions.js     [22m[32m549.00 B[39m
+[32mESM[39m [1mdist/index.js          [22m[32m2.35 KB[39m
+[32mESM[39m [1mdist/plugins.js        [22m[32m1.67 KB[39m
+[32mESM[39m ⚡️ Build success in 66ms
+[32mCJS[39m [1mdist/extensions.cjs [22m[32m7.51 KB[39m
+[32mCJS[39m [1mdist/plugins.cjs    [22m[32m2.17 KB[39m
+[32mCJS[39m [1mdist/index.cjs      [22m[32m5.34 KB[39m
+[32mCJS[39m ⚡️ Build success in 68ms
 [34mDTS[39m Build start
-[32mDTS[39m ⚡️ Build success in 3025ms
+[32mDTS[39m ⚡️ Build success in 3048ms
 [32mDTS[39m [1mdist/index.d.cts      [22m[32m3.18 KB[39m
 [32mDTS[39m [1mdist/extensions.d.cts [22m[32m4.09 KB[39m
-[32mDTS[39m [1mdist/plugins.d.cts    [22m[32m841.00 B[39m
+[32mDTS[39m [1mdist/plugins.d.cts    [22m[32m893.00 B[39m
 [32mDTS[39m [1mdist/index.d.ts       [22m[32m3.18 KB[39m
 [32mDTS[39m [1mdist/extensions.d.ts  [22m[32m4.09 KB[39m
-[32mDTS[39m [1mdist/plugins.d.ts     [22m[32m841.00 B[39m
+[32mDTS[39m [1mdist/plugins.d.ts     [22m[32m893.00 B[39m

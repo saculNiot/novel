@@ -55,12 +55,12 @@ function findPlaceholder(state: EditorState, id: {}) {
 
 export interface ImageUploadOptions {
   validateFn?: (file: File) => void;
-  onUpload: (file: File) => Promise<unknown>;
+  onUpload: (file: File, url: string) => Promise<unknown>;
 }
 
 export const createImageUpload =
   ({ validateFn, onUpload }: ImageUploadOptions): UploadFn =>
-  (file, view, pos) => {
+  (file, view, pos, url) => {
     // check if the file is an image
     const validated = validateFn?.(file);
     if (!validated) return;
@@ -84,7 +84,7 @@ export const createImageUpload =
       view.dispatch(tr);
     };
 
-    onUpload(file).then((src) => {
+    onUpload(file, url).then((src) => {
       const { schema } = view.state;
 
       let pos = findPlaceholder(view.state, id);
@@ -110,19 +110,25 @@ export const createImageUpload =
     });
   };
 
-export type UploadFn = (file: File, view: EditorView, pos: number) => void;
+export type UploadFn = (
+  file: File,
+  view: EditorView,
+  pos: number,
+  url: string,
+) => void;
 
 export const handleImagePaste = (
   view: EditorView,
   event: ClipboardEvent,
   uploadFn: UploadFn,
+  url: string,
 ) => {
   if (event.clipboardData?.files.length) {
     event.preventDefault();
     const [file] = Array.from(event.clipboardData.files);
     const pos = view.state.selection.from;
 
-    if (file) uploadFn(file, view, pos);
+    if (file) uploadFn(file, view, pos, url);
     return true;
   }
   return false;
@@ -133,6 +139,7 @@ export const handleImageDrop = (
   event: DragEvent,
   moved: boolean,
   uploadFn: UploadFn,
+  url: string,
 ) => {
   if (!moved && event.dataTransfer?.files.length) {
     event.preventDefault();
@@ -142,7 +149,7 @@ export const handleImageDrop = (
       top: event.clientY,
     });
     // here we deduct 1 from the pos or else the image will create an extra node
-    if (file) uploadFn(file, view, coordinates?.pos ?? 0 - 1);
+    if (file) uploadFn(file, view, coordinates?.pos ?? 0 - 1, url);
     return true;
   }
   return false;
