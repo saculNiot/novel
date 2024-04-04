@@ -1,0 +1,82 @@
+Arguments: 
+  /opt/homebrew/Cellar/node@18/18.19.1_1/bin/node /opt/homebrew/Cellar/yarn/1.22.19/libexec/bin/yarn.js install
+
+PATH: 
+  /Users/gohshengyang/.rvm/gems/ruby-2.7.6/bin:/Users/gohshengyang/.rvm/gems/ruby-2.7.6@global/bin:/Users/gohshengyang/.rvm/rubies/ruby-2.7.6/bin:/opt/homebrew/opt/node@18/bin:/Users/gohshengyang/Library/pnpm:/Users/gohshengyang/.nvm/versions/node/v16.20.2/bin:/Users/gohshengyang/.amplify/bin:/opt/homebrew/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Users/gohshengyang/Flutter/flutter/bin:/Users/gohshengyang/.rvm/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.19.1
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: EINVAL: invalid argument, mkdir '/Users/gohshengyang/Github/novel/apps/web/node_modules/cmdk/node_modules/@radix-ui'
+
+npm manifest: 
+  {
+    "name": "novel-next-app",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "format:write": "prettier --write \"**/*.{css,js,json,jsx,ts,tsx}\"",
+      "format": "prettier \"**/*.{css,js,json,jsx,ts,tsx}\"",
+      "lint": "next lint"
+    },
+    "dependencies": {
+      "@radix-ui/react-dialog": "^1.0.5",
+      "@radix-ui/react-popover": "^1.0.6",
+      "@radix-ui/react-scroll-area": "^1.0.5",
+      "@radix-ui/react-select": "^2.0.0",
+      "@radix-ui/react-separator": "^1.0.3",
+      "@radix-ui/react-slot": "^1.0.2",
+      "@tailwindcss/typography": "^0.5.10",
+      "@upstash/ratelimit": "^0.4.3",
+      "@vercel/analytics": "^1.0.1",
+      "@vercel/blob": "^0.9.2",
+      "@vercel/kv": "^0.2.1",
+      "ai": "^2.2.33",
+      "autoprefixer": "^10.4.17",
+      "class-variance-authority": "^0.7.0",
+      "clsx": "^1.2.1",
+      "cmdk": "^0.2.1",
+      "eslint": "8.36.0",
+      "eslint-config-next": "13.2.4",
+      "eventsource-parser": "^0.1.0",
+      "lucide-react": "^0.244.0",
+      "next": "14.1.0",
+      "next-themes": "^0.2.1",
+      "novel": "workspace:^",
+      "openai": "^4.27.0",
+      "react": "18.2.0",
+      "react-dom": "18.2.0",
+      "react-markdown": "^8.0.7",
+      "sonner": "^0.7.0",
+      "tailwind-merge": "^1.14.0",
+      "tailwindcss-animate": "^1.0.6",
+      "tippy.js": "^6.3.7",
+      "ts-pattern": "^5.0.6",
+      "typescript": "^5.3.3",
+      "use-debounce": "^9.0.3"
+    },
+    "devDependencies": {
+      "@types/node": "18.15.3",
+      "@types/react": "^18.2.55",
+      "@types/react-dom": "18.2.19",
+      "prettier-plugin-tailwindcss": "^0.3.0",
+      "tailwindcss": "^3.4.1",
+      "tsconfig": "workspace:*"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
